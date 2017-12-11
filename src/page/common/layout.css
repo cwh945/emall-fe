@@ -81,3 +81,18 @@ input[type = 'checkbox']{
     font-size: 12px;
     padding: 0 10px;
 }
+
+/* loading */
+.loading{
+    margin: 10px auto;
+    /* 居中 */
+    display: block;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    /* 圆角5px */
+    background: url(../../image/icon/loading.gif) no-repeat;
+    opacity: .6;
+    /* 半透明 */
+}
