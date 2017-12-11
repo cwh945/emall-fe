@@ -6,4 +6,4 @@
 */
 'use strict';
 
-console.log('i am global');
+require('./layout.css');

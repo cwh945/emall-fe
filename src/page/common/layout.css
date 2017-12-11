@@ -1,0 +1,83 @@
+/* css reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    /* 清除样式 */
+}
+body{
+    background: #f6f6f6;
+    font: 12px/1.5 tohoma,arial,Microsoft YaHei,sans-serif;
+}
+li{
+    list-style: none;
+    /* 清除样式 */
+}
+img{
+    display: block;
+    border: none;
+    /* 清除样式 */
+}
+label{
+    cursor: pointer;
+    /* 手指样式 */
+}
+input[type = 'checkbox']{
+    cursor: pointer;
+}
+
+/* 定宽布局 */
+.w{
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    /* 相对定位 */
+    overflow: hidden;
+    /* 超出边界不显示，清除浮动 */
+}
+/* 全局通用样式 */
+.hide{
+    display: none;
+}
+/* 超链样式 */
+.link{
+    color: #999;
+    cursor: pointer;
+    text-decoration: none;
+    /* 不要下划线 */
+}
+/* 鼠标悬停 */
+.link:hover{
+    color: #e80012;
+}
+/* 连接颜色 */
+.link-text{
+    color: #999;
+}
+
+/* btn */
+.btn{
+    display: inline-block;
+    /* 宽度 */
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    /* 垂直居中 */
+    vertical-align: middle;
+    /* 防止样式冲突 */
+    border: none;
+    background: #c60023;
+    font-size: 17px;
+    font-weight: bold;
+    /* 加粗 */
+    color: #fff;
+    outline: none;
+    /* 当元素获得焦点的时候，焦点框为0 */
+    text-decoration: none;
+}
+.btn-mini{
+    height: 25px;
+    line-height: 25px;
+    font-size: 12px;
+    padding: 0 10px;
+}

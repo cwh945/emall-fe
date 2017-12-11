@@ -44,9 +44,37 @@ var _mm = {
         result = template.render(data);
         return result;
     },
+    //成功提示
+    successTips : function(msg){
+        alert(msg || '操作成功!');
+    },
+    //失败提示
+    errorTips : function(msg){
+        alert(msg || '操作失败!');
+    },
+    validate : function(value,type){
+        var value = $.trim(value);
+        // 非空验证
+        if('require' === type){
+            return !!value;
+        }
+        // 手机号验证
+        if('phone' === type){
+            return /^1\d{10}$/.test(value);
+            //是否以1开头，后面10位长度
+        }
+        // 邮箱格式验证
+        if('email' === type){
+            return /^(\w)+(\.\w+)*@(\w)+((\.\w{2,3}){1,3})$/.test(value);
+        }
+    },
     // 跳转登录
     doLogin : function(){
         window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+    },
+    //返回首页
+    goHome : function(){
+        window.location.href = './index.html';
     }
 };
 
